@@ -5,7 +5,7 @@ import org.apache.spark.rdd.RDD
 import org.apache.spark.SparkContext
 
 trait FileCloner {
-  def call(context: SparkContext2,
+  def call(context: SparkContext,
            inputPath: String,
            outputPath: String): FileClonerResults
 }
