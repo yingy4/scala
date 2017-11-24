@@ -13,6 +13,8 @@ class FileClonerSpec extends WordSpec with SparkHelper {
   Logger.getLogger("org").setLevel(Level.WARN)
   Logger.getLogger("akka").setLevel(Level.WARN)
 
+
+
   ".call" when {
     def result(inputPath: String, outputPath: String): FileClonerResults = {
       new FileClonerImpl().call(
