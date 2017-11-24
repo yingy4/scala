@@ -27,9 +27,9 @@ class WordCountSpec extends FunSuite with Matchers with BeforeAndAfterAll {
 
 
 
-  override def afterAll() {
-    sparkContext.stop()
-  }
+//  override def afterAll() {
+//    sparkContext.stop()
+//  }
 
 
   val fileLines = Array("Line One", "Line Two", "Line Three", "Line Four")

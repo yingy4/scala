@@ -31,7 +31,7 @@ trait SparkHelper extends Suite with BeforeAndAfterEach with BeforeAndAfterAll {
     FileUtils.deleteDirectory(new File("./tmp/samples"))
   }
 
-  override def afterAll() {
-    context.stop()
-  }
+//  override def afterAll() {
+//    context.stop()
+//  }
 }
