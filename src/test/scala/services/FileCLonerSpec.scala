@@ -44,4 +44,5 @@ class FileClonerSpec extends WordSpec with SparkHelper {
       }
     }
   }
+
 }
