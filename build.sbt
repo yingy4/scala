@@ -18,9 +18,7 @@ libraryDependencies +="io.circe" % "circe-generic_2.12" % "0.7.1",
 libraryDependencies +="io.circe" % "circe-parser_2.12" % "0.7.1",
 
 libraryDependencies +="org.slf4j" % "slf4j-api" % "1.7.21",
-libraryDependencies +="org.slf4j" % "slf4j-log4j12" % "1.7.21",
-libraryDependencies +="com.twitter" % "util-core_2.11" % "6.34.0",
-libraryDependencies +="org.typelevel" % "cats-core_2.11" % "0.7.2"
+libraryDependencies +="org.slf4j" % "slf4j-log4j12" % "1.7.21"
 
 	
 
