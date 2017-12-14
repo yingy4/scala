@@ -2,10 +2,6 @@ package services
 
 import java.time.LocalTime
 import java.time.format.DateTimeFormatter
-// import cats.syntax.either._
-// import com.esri.core.geometry._
-// import io.circe.Decoder
-// import io.circe.parser.decode
 import org.apache.spark.ml.{PipelineModel, Pipeline}
 import org.apache.spark.ml.classification.{RandomForestClassificationModel, RandomForestClassifier}
 import org.apache.spark.ml.evaluation.MulticlassClassificationEvaluator
@@ -154,9 +150,6 @@ object SanFranciscoCrimeModel {
   }
 
 
-
-
-
   def main(args: Array[String]): Unit = {
     if (args.length < 6) {
       System.err.println("Usage: SanFranciscoCrimeModel <train file> <test file> " +
@@ -272,7 +265,7 @@ object SanFranciscoCrimeModel {
       ._1
     println(bestEstimatorParamMap)
 
-    
+
     val labels = derivedTrainDF.select(labelColName).distinct().collect()
       .map { case Row(label: String) => label }
       .sorted
